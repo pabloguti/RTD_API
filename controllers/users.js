@@ -9,7 +9,8 @@ exports.addUser = function(req, res) {
 
     var user = new Users({
         name:    req.body.name,
-        email:     req.body.email
+        email:     req.body.email,
+        technical:   req.body.technical
     });
 
     user.save(function(err, user) {
