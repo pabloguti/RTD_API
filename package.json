@@ -1,6 +1,6 @@
 {
   "name": "rpd-api-server",
-  "version": "1.0",
+  "version": "0.0.1",
   "dependencies": {
     "mongoose": "^4.8.6",
     "express": "^4.15.2",
