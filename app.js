@@ -37,7 +37,7 @@ app.use('/api', usersRoute);
 
 app.use(function (req, res, next) {
         var hostname = ( req.headers.host.match(/:/g) ) ? req.headers.host.slice( 0, req.headers.host.indexOf(":") ) : req.headers.host;
-        res.setHeader('Access-Control-Allow-Origin', "http://"+hostname+":3000");
+        res.setHeader('Access-Control-Allow-Origin', "http://"+hostname);
         res.header('Access-Control-Allow-Credentials', true);
         res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
         res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
@@ -45,7 +45,7 @@ app.use(function (req, res, next) {
     }
 );
 
-app.listen(3030, function() {
-    console.log("Node server running on http://localhost:3030");
+app.listen(3000, function() {
+    console.log("Node server running on 80");
 });
 
