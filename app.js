@@ -46,6 +46,6 @@ app.use(function (req, res, next) {
 );
 
 app.listen(3000, function() {
-    console.log("Node server running on 80");
+    console.log("Node server running on 3000");
 });
 
