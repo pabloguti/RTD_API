@@ -1,0 +1,10 @@
+{
+  "name": "rpd-api-server",
+  "version": "1.0",
+  "dependencies": {
+    "mongoose": "^4.8.6",
+    "express": "^4.15.2",
+    "method-override": "^2.3.7",
+    "body-parser": "^1.17.1"
+  }
+}
